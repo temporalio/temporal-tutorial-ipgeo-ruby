@@ -2,8 +2,8 @@
 
 $LOAD_PATH << File.expand_path(File.dirname(__FILE__) + '/../lib')
 
-require 'ip_geolocate/get_address_from_ip_workflow'
-require 'ip_geolocate/task_queue_name'
+require 'get_address_from_ip_workflow'
+require 'task_queue_name'
 require 'temporalio/client'
 
 name = ARGV[0]

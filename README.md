@@ -31,13 +31,13 @@ $ temporal server start-dev --db-filename temporal.db
 Now launch a new terminal window and start the Temporal Worker:
 
 ```bash
-ruby bin/worker.rb
+ruby lib/worker.rb
 ```
 
 In a new terminal window, run the client app to start the Workflow:
 
 ```bash
-ruby bin/ip_geo_ruby.rb Angela
+ruby lib/ip_geo_ruby.rb Angela
 ```
 
 In a third terminal window, start the web server to handle API and web requests:

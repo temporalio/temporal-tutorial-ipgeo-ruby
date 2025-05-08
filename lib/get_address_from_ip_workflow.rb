@@ -1,3 +1,4 @@
+# @@@SNIPSTART ruby-ipgeo-get-address-from-ip-workflow
 require 'temporalio/workflow'
 require 'temporalio/retry_policy' 
 
@@ -29,3 +30,4 @@ module IPGeolocate
     end
   end
 end
+# @@@SNIPEND

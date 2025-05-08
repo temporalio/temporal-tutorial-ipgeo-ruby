@@ -1,3 +1,4 @@
+# @@@SNIPSTART ruby-ipgeo-get-public-ip
 require 'temporalio/activity'
 require 'net/http'
 require 'uri'
@@ -12,4 +13,4 @@ module IPGeolocate
     end
   end
 end
-
+# @@@SNIPEND
