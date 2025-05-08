@@ -3,7 +3,6 @@ require "test_helper"
 require 'securerandom'
 require 'temporalio/testing'
 require 'temporalio/worker'
-require "ip_geolocate"
 
 class GetAddressFromIPWorkflowTest < Minitest::Test
     class MockGetIPActivity < Temporalio::Activity::Definition

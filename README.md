@@ -37,7 +37,7 @@ ruby lib/worker.rb
 In a new terminal window, run the client app to start the Workflow:
 
 ```bash
-ruby lib/client.rb
+ruby lib/client.rb Angela
 ```
 
 In a third terminal window, start the web server to handle API and web requests:
