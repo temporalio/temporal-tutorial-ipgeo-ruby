@@ -1,5 +1,4 @@
-#!/usr/bin/env ruby
-
+# @@@SNIPSTART ruby-ipgeo-client
 $LOAD_PATH << File.expand_path(File.dirname(__FILE__) + '/../lib')
 
 require 'get_address_from_ip_workflow'
@@ -29,3 +28,4 @@ result = client.execute_workflow(
 )
 
 puts result
+# @@@SNIPEND

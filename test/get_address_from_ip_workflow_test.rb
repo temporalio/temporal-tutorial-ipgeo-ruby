@@ -1,3 +1,4 @@
+# @@@SNIPSTART ruby-get-address-from-ip-workflow-test
 require "test_helper"
 require 'securerandom'
 require 'temporalio/testing'
@@ -41,3 +42,4 @@ class GetAddressFromIPWorkflowTest < Minitest::Test
     end
   end
 end
+# @@@SNIPEND

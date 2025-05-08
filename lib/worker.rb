@@ -1,5 +1,4 @@
-#!/usr/bin/env ruby
-
+# @@@SNIPSTART ruby-ipgeo-worker
 $LOAD_PATH << File.expand_path(File.dirname(__FILE__) + '/../lib')
 
 require 'ip_geolocate'
@@ -24,3 +23,4 @@ worker = Temporalio::Worker.new(
 
 # Run the worker until SIGINT. This can be done in many ways, see "Workers" section for details.
 worker.run(shutdown_signals: ['SIGINT'])
+# @@@SNIPEND

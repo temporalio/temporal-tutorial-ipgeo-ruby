@@ -1,7 +1,8 @@
+# @@@SNIPSTART ruby-ip-activity-test
 require "test_helper"
 require 'securerandom'
 require 'temporalio/testing'
-require "ip_geolocate/get_ip_activity"
+require "get_ip_activity"
 
 class GetIPActivityTest < Minitest::Test
   def test_gets_ip
@@ -14,3 +15,4 @@ class GetIPActivityTest < Minitest::Test
   end
 
 end
+# @@@SNIPEND

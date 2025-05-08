@@ -37,7 +37,7 @@ ruby lib/worker.rb
 In a new terminal window, run the client app to start the Workflow:
 
 ```bash
-ruby lib/ip_geo_ruby.rb Angela
+ruby lib/client.rb
 ```
 
 In a third terminal window, start the web server to handle API and web requests:

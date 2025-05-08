@@ -1,7 +1,8 @@
+# @@@SNIPSTART ruby-get-location-activity-test
 require "test_helper"
 require 'securerandom'
 require 'temporalio/testing'
-require "ip_geolocate/get_location_activity"
+require "get_location_activity"
 
 class GetLocationActivityTest < Minitest::Test
   def test_gets_ip
@@ -20,3 +21,4 @@ class GetLocationActivityTest < Minitest::Test
   end
 
 end
+# @@@SNIPEND
