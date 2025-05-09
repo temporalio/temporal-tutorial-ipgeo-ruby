@@ -1,4 +1,4 @@
-# temporal-tutorial-ipgeo-ruby# Get Address from IP
+# Get Address from IP - Ruby
 
 This application demonstrates using Temporal by calling two APIs in sequence.
 It fetches the user's IP address and then uses that address to geolocate that user.

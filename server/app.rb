@@ -10,7 +10,6 @@ require 'task_queue_name'
 class App < Sinatra::Base
   configure do
     set :public_folder, File.join(File.dirname(__FILE__), 'views')
-    set :port, 3000
     set :temporal_client, Temporalio::Client.connect('localhost:7233', 'default')
   end
 
