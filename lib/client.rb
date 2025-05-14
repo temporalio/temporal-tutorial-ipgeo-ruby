@@ -1,8 +1,5 @@
 # @@@SNIPSTART ruby-ipgeo-client
-$LOAD_PATH << File.expand_path(File.dirname(__FILE__) + '/../lib')
-
-require 'get_address_from_ip_workflow'
-require 'task_queue_name'
+require_relative 'ip_geolocate'
 require 'temporalio/client'
 
 name = ARGV[0]
@@ -15,7 +12,7 @@ end
 begin
   client = Temporalio::Client.connect('localhost:7233', 'default')
 rescue StandardError => e
-  puts "Unable to connect to Temporal. Is the server running?"
+  puts e.message
   exit 1
 end
 

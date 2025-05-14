@@ -2,7 +2,7 @@
 require "test_helper"
 require 'securerandom'
 require 'temporalio/testing'
-require "get_location_activity"
+require "ip_geolocate/get_location_activity"
 
 class GetLocationActivityTest < Minitest::Test
   def test_gets_ip

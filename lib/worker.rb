@@ -1,6 +1,5 @@
 # @@@SNIPSTART ruby-ipgeo-worker
-$LOAD_PATH << File.expand_path(File.dirname(__FILE__) + '/../lib')
-require_relative "ip_geolocate" 
+require_relative 'ip_geolocate'
 require 'temporalio/client'
 require 'temporalio/worker'
 
@@ -8,7 +7,7 @@ require 'temporalio/worker'
 begin
   client = Temporalio::Client.connect('localhost:7233', 'default')
 rescue StandardError => e
-  puts "Unable to connect to Temporal. Is the server running?"
+  puts e.message
   exit 1
 end
 

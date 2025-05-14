@@ -85,9 +85,8 @@ DEPENDENCIES
   minitest-reporters (~> 1.7)
   puma (~> 6.5)
   rackup (~> 2.2)
-  rake (~> 13.2)
   sinatra (~> 4.1)
-  temporalio (~> 0.4)
+  temporalio
 
 BUNDLED WITH
    2.5.22

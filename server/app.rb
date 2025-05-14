@@ -3,9 +3,7 @@ require 'temporalio/client'
 require 'json'
 require 'securerandom'
 
-$LOAD_PATH << File.expand_path(File.dirname(__FILE__) + '/../lib')
-require 'get_address_from_ip_workflow'
-require 'task_queue_name'
+require_relative '../lib/ip_geolocate'
 
 class App < Sinatra::Base
   configure do

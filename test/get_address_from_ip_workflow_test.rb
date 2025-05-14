@@ -1,24 +1,26 @@
 # @@@SNIPSTART ruby-get-address-from-ip-workflow-test
-require "test_helper"
+require 'test_helper'
 require 'securerandom'
 require 'temporalio/testing'
 require 'temporalio/worker'
+require 'ip_geolocate'
 
 class GetAddressFromIPWorkflowTest < Minitest::Test
-    class MockGetIPActivity < Temporalio::Activity::Definition
-      activity_name :GetIPActivity
+  class MockGetIPActivity < Temporalio::Activity::Definition
+    activity_name :GetIPActivity
 
-      def execute
-        "1.1.1.1"
-      end
+    def execute
+      "1.1.1.1"
     end
-    class MockGetLocationActivity < Temporalio::Activity::Definition
-      activity_name :GetLocationActivity
+  end
+  
+  class MockGetLocationActivity < Temporalio::Activity::Definition
+    activity_name :GetLocationActivity
 
-      def execute(ip)
-        "Planet Earth"
-      end
+    def execute(ip)
+      "Planet Earth"
     end
+  end
 
   def test_gets_location_from_ip_with_mocked_activities
     Temporalio::Testing::WorkflowEnvironment.start_local do |env|
