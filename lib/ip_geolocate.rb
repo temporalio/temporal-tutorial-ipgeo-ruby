@@ -5,6 +5,6 @@ require_relative "ip_geolocate/get_address_from_ip_workflow"
 
 # @@@SNIPSTART ruby-ipgeo-shared
 module IPGeolocate
-    TASK_QUEUE_NAME = "ip-address-ruby"
+  TASK_QUEUE_NAME = "ip-address-ruby"
 end
 # @@@SNIPEND
