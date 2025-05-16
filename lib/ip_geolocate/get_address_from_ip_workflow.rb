@@ -10,7 +10,7 @@ module IPGeolocate
     def execute(name)
       ip = Temporalio::Workflow.execute_activity(
         GetIPActivity,
-        schedule_to_close_timeout: 300,
+        start_to_close_timeout: 300,
         retry_policy: Temporalio::RetryPolicy.new(
           initial_interval: 2.0,      # amount of time that must elapse before the first retry occurs
           backoff_coefficient: 1.5,   # Coefficient used to calculate the next retry interval
