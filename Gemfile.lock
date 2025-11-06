@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ansi (1.5.0)
-    base64 (0.2.0)
+    base64 (0.3.0)
     bigdecimal (3.1.9)
     builder (3.3.0)
     google-protobuf (4.30.2)
@@ -23,20 +23,20 @@ GEM
     google-protobuf (4.30.2-x86_64-linux)
       bigdecimal
       rake (>= 13)
-    logger (1.6.5)
+    logger (1.7.0)
     minitest (5.25.4)
     minitest-reporters (1.7.1)
       ansi
       builder
       minitest (>= 5.0)
       ruby-progressbar
-    mustermann (3.0.3)
+    mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.4)
     puma (6.5.0)
       nio4r (~> 2.0)
-    rack (3.1.15)
-    rack-protection (4.1.1)
+    rack (3.2.4)
+    rack-protection (4.2.0)
       base64 (>= 0.1.0)
       logger (>= 1.6.0)
       rack (>= 3.0.0, < 4)
@@ -48,11 +48,11 @@ GEM
     rake (13.2.1)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
-    sinatra (4.1.1)
+    sinatra (4.2.0)
       logger (>= 1.6.0)
       mustermann (~> 3.0)
       rack (>= 3.0.0, < 4)
-      rack-protection (= 4.1.1)
+      rack-protection (= 4.2.0)
       rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
     temporalio (0.4.0)
@@ -70,7 +70,7 @@ GEM
     temporalio (0.4.0-x86_64-linux)
       google-protobuf (>= 3.25.0)
       logger
-    tilt (2.6.0)
+    tilt (2.6.1)
 
 PLATFORMS
   aarch64-linux
@@ -85,7 +85,7 @@ DEPENDENCIES
   minitest-reporters (~> 1.7)
   puma (~> 6.5)
   rackup (~> 2.2)
-  sinatra (~> 4.1)
+  sinatra (~> 4.2)
   temporalio
 
 BUNDLED WITH

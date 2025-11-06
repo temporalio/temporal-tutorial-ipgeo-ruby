@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "sinatra", "~> 4.1"
+gem "sinatra", "~> 4.2"
 gem "temporalio"
 gem "rackup", "~> 2.2"
 gem "puma", "~> 6.5"
